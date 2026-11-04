@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shivani Thakur — Political Science Graduate</title>
+<meta name="description" content="Political Science graduate with a strong interest in gender equality, social justice, and international development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#608A8F;      /* primary accent */
+  --coral:#DFADA1;     /* secondary accent */
+  --ink:#2C2B2A;       /* text + headings */
+  --ivory:#FBFBF9;     /* background */
+  --bone:#F1EDE8;      /* card / chip fill */
+  --muted:rgba(44,43,42,.74);
+  --line:rgba(96,138,143,.3);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Figtree","Segoe UI",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --lift:0 0 0 .5px rgba(44,43,42,.12),0 1px 2px rgba(44,43,42,.1),0 12px 30px -10px rgba(44,43,42,.16),0 36px 70px -28px rgba(96,138,143,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 1.05rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1080px,100% - 48px);margin:0 auto}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;margin:0;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:8px}
+
+/* ---------- living backdrop ---------- */
+.defs{position:fixed;width:0;height:0;pointer-events:none}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.blob{position:absolute;border-radius:50%;will-change:transform}
+.b1{width:64vmax;height:64vmax;left:-20vmax;top:-22vmax;background:radial-gradient(circle at 40% 40%,rgba(96,138,143,.5),rgba(96,138,143,0) 68%);animation:d1 26s ease-in-out infinite alternate}
+.b2{width:58vmax;height:58vmax;right:-20vmax;top:4vmax;background:radial-gradient(circle at 40% 40%,rgba(223,173,161,.62),rgba(223,173,161,0) 68%);animation:d2 30s ease-in-out infinite alternate}
+.b3{width:62vmax;height:62vmax;left:4vmax;bottom:-32vmax;background:radial-gradient(circle at 45% 40%,#F1EDE8 0,rgba(241,237,232,.8) 40%,rgba(241,237,232,0) 68%);animation:d3 28s ease-in-out infinite alternate}
+.b4{width:48vmax;height:48vmax;right:2vmax;bottom:-20vmax;background:radial-gradient(circle at 45% 40%,rgba(96,138,143,.28),rgba(96,138,143,0) 68%);animation:d1 32s ease-in-out infinite alternate-reverse}
+@keyframes d1{to{transform:translate3d(16vmax,10vmax,0) rotate(40deg) scale(1.12)}}
+@keyframes d2{to{transform:translate3d(-18vmax,9vmax,0) rotate(-35deg) scale(.92)}}
+@keyframes d3{to{transform:translate3d(12vmax,-12vmax,0) rotate(30deg) scale(1.16)}}
+.grid{position:absolute;inset:-64px;will-change:transform;animation:grid 48s linear infinite;
+  background-image:linear-gradient(rgba(96,138,143,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(96,138,143,.1) 1px,transparent 1px);background-size:64px 64px}
+@keyframes grid{to{transform:translate3d(64px,64px,0)}}
+
+/* ---------- glass: the floating nav pill ---------- */
+.lens{position:relative;border-radius:var(--r,28px);box-shadow:var(--lift)}
+.lens>.lg-glass,.lens>.lg-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+.lg-content{position:relative}
+.lg-glass{background:linear-gradient(135deg,rgba(255,255,255,.55),rgba(255,255,255,.2) 45%,rgba(255,255,255,.4));
+  -webkit-backdrop-filter:blur(14px) saturate(1.5) brightness(1.03);backdrop-filter:blur(14px) saturate(1.5) brightness(1.03)}
+.refract .bar .lg-glass{-webkit-backdrop-filter:url(#soft) blur(6px) saturate(1.5) brightness(1.03);backdrop-filter:url(#soft) blur(6px) saturate(1.5) brightness(1.03)}
+.lg-shine{box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 1px 0 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(44,43,42,.05);
+  background:radial-gradient(300px circle at var(--mx,22%) var(--my,0%),rgba(255,255,255,.6),transparent 60%)}
+.lens::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;pointer-events:none;
+  background:linear-gradient(135deg,#fff,rgba(255,255,255,.35) 28%,rgba(255,255,255,.05) 55%,rgba(255,255,255,.4) 82%,#fff);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude}
+
+header.bar{position:sticky;top:12px;z-index:5;width:min(1080px,calc(100% - 24px));margin:12px auto 0;--r:999px}
+.bar .lg-content{display:flex;justify-content:space-between;align-items:center;height:60px;padding:0 12px 0 26px}
+.mark{font:600 1.2rem var(--serif);color:var(--ink);text-decoration:none;white-space:nowrap}
+.bar nav{display:flex;gap:4px}
+.bar nav a{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:500;padding:8px 14px;border-radius:999px;transition:background .35s var(--ease),color .35s var(--ease)}
+.bar nav a:hover{color:var(--ink);background:rgba(223,173,161,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
+
+/* ---------- glass: panes (cards, tiles, chips) ---------- */
+.pane{position:relative;isolation:isolate;border-radius:var(--r,24px);box-shadow:var(--lift);transition:scale .6s var(--ease),box-shadow .6s var(--ease)}
+.pane::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(280px circle at var(--mx,20%) var(--my,0%),rgba(255,255,255,.75),transparent 62%),linear-gradient(135deg,rgba(255,255,255,.6),rgba(241,237,232,.38) 55%,rgba(255,255,255,.45));
+  -webkit-backdrop-filter:blur(14px) saturate(1.5);backdrop-filter:blur(14px) saturate(1.5);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 1px 0 0 rgba(255,255,255,.6),inset 0 0 0 1px rgba(255,255,255,.3)}
+.pane.bone::before{background:radial-gradient(280px circle at var(--mx,20%) var(--my,0%),rgba(255,255,255,.7),transparent 62%),linear-gradient(135deg,rgba(241,237,232,.85),rgba(241,237,232,.5))}
+.pane.hover:hover{scale:1.02}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{display:inline-block;font:600 .8rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:18px;padding:6px 14px;border-radius:999px;background:rgba(223,173,161,.55);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 0 0 .5px rgba(44,43,42,.1);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+h1{font-size:clamp(3.2rem,8vw,6rem);font-weight:600;line-height:.98}
+h1 span{display:block;color:var(--teal)}
+.lead{font-size:1.25rem;color:var(--muted);max-width:30em;margin:26px 0 30px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font:600 1rem var(--sans);padding:14px 26px;border-radius:999px;transition:background .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
+.btn.coral{background:var(--coral);color:var(--ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 12px 24px -10px rgba(223,173,161,.9)}
+.btn.coral:hover{background:#e8bcb1;transform:translateY(-2px)}
+.btn.ghost{color:var(--ink);background:rgba(255,255,255,.45);border:1.5px solid var(--teal);-webkit-backdrop-filter:blur(10px) saturate(1.5);backdrop-filter:blur(10px) saturate(1.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.95)}
+.btn.ghost:hover{background:rgba(223,173,161,.5);transform:translateY(-2px)}
+
+.stage{position:relative}
+.card{--r:38px}
+.card .lg-content{padding:30px 30px 28px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between}
+.badge{align-self:flex-start;font:600 .82rem var(--sans);padding:6px 14px;border-radius:999px;background:var(--coral);color:var(--ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+.big{font:600 clamp(5rem,12vw,7.6rem)/.9 var(--serif);color:var(--teal);letter-spacing:-.03em;margin:22px 0 6px}
+.big small{font:600 1rem var(--sans);letter-spacing:.14em;color:var(--ink);margin-left:10px;text-transform:uppercase}
+.card p{margin:0;color:var(--muted);font-size:1rem;line-height:1.5}
+.card p b{color:var(--ink);font-weight:600}
+.card hr{border:0;border-top:1px solid var(--line);margin:18px 0 14px}
+
+/* the refracting loupe: one element, one backdrop filter */
+.loupe{position:absolute;left:0;top:0;z-index:2;width:84px;height:84px;border-radius:50%;cursor:grab;touch-action:none;will-change:translate;
+  background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.35),rgba(255,255,255,.02) 55%);
+  -webkit-backdrop-filter:blur(1.5px) saturate(1.3);backdrop-filter:blur(1.5px) saturate(1.3);
+  box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.85),inset 7px 7px 12px rgba(255,255,255,.5),inset -4px -5px 10px rgba(96,138,143,.35),inset 3px 0 6px rgba(223,173,161,.5),0 14px 30px -10px rgba(44,43,42,.4);
+  transition:scale .5s var(--ease)}
+.refract .loupe{-webkit-backdrop-filter:url(#lens) saturate(1.35) contrast(1.06);backdrop-filter:url(#lens) saturate(1.35) contrast(1.06)}
+.loupe:hover{scale:1.08}
+.loupe:active{cursor:grabbing}
+
+/* ---------- sections ---------- */
+section{padding:56px 0 0}
+h2{font-size:clamp(2rem,4vw,2.8rem);font-weight:600;display:flex;align-items:center;gap:16px;margin-bottom:28px}
+h2::before{content:"";flex:none;width:34px;height:26px;background:var(--teal);clip-path:polygon(0 0,62% 0,100% 50%,62% 100%,0 100%,38% 50%)}
+.cols{display:grid;grid-template-columns:1.15fr .85fr;gap:32px}
+.profile{--r:30px;padding:34px 38px}
+.profile p{margin:0;font:400 clamp(1.2rem,2.4vw,1.55rem)/1.55 var(--serif)}
+.pad{padding:26px 28px}
+.pad h3{font:600 1.35rem var(--sans);letter-spacing:0}
+.pad .sub{margin:6px 0 0;color:var(--muted)}
+.pad .kv{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.pill{font:600 .82rem var(--sans);padding:5px 12px;border-radius:999px;background:rgba(223,173,161,.55);box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
+.pill.teal{background:rgba(96,138,143,.22)}
+.lang{display:grid;gap:14px}
+.lang .pane{padding:18px 24px;--r:20px}
+.lang b{display:block;font:600 1.15rem var(--sans)}
+.lang span{color:var(--muted)}
+
+.skills{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.skills li{padding:22px 22px 24px;--r:20px;font:600 1.08rem/1.3 var(--sans)}
+.skills li i{display:block;font:600 1.5rem var(--serif);color:var(--teal);font-style:normal;margin-bottom:22px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+ul.dots{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
+ul.dots li{position:relative;padding-left:24px;color:var(--muted)}
+ul.dots li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:10px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(96,138,143,.2)}
+.role{--r:28px;padding:32px 36px}
+.role h3{font:600 1.5rem var(--sans);letter-spacing:.01em}
+.role .at{margin:4px 0 0;color:var(--teal);font-weight:600}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ct{display:block;padding:24px 26px;--r:24px;text-decoration:none;color:var(--ink)}
+.ct small{display:block;font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.ct b{display:block;font:600 1.1rem/1.35 var(--sans);overflow-wrap:anywhere}
+.ct span{display:block;margin-top:8px;color:var(--teal);font-weight:600;font-size:.92rem}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+
+footer{margin-top:84px;padding:32px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+
+@media (max-width:860px){
+  .hero .wrap,.cols,.two{grid-template-columns:1fr}
+  .hero .wrap{gap:36px}
+  .skills{grid-template-columns:1fr 1fr}
+  .bar nav{gap:0}
+  .bar nav a{padding:8px 10px;font-size:.88rem}
+  .bar nav a:not(:first-child):not(:last-child){display:none}
+  .bar .lg-content{padding:0 8px 0 20px}
+  .mark{font-size:1.1rem}
+  .loupe{width:62px;height:62px}
+  .profile{padding:26px 24px}
+  .role{padding:26px 24px}
+}
+@media (max-width:480px){.skills{grid-template-columns:1fr}}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .lg-glass{background:rgba(251,251,249,.85)}
+  .pane::before{background:rgba(251,251,249,.9)}
+}
+@media (prefers-reduced-motion:reduce){
+  .blob,.grid{animation:none}
+  .pane,.loupe,.btn{transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body id="top">
+
+<!-- Hidden SVG filters. #soft gently bends the nav's backdrop; #lens bends what the loupe passes over. -->
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="soft" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="2" seed="3" result="n">
+        <animate attributeName="baseFrequency" dur="22s" values="0.008 0.014;0.013 0.009;0.008 0.014" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="10" data-s="10" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="lens" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.016" numOctaves="1" seed="9" result="n">
+        <animate attributeName="baseFrequency" dur="14s" values="0.012 0.016;0.02 0.011;0.012 0.016" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" data-s="26" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<div class="bg" aria-hidden="true">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+  <div class="grid"></div>
+</div>
+
+<header class="bar lens">
+  <span class="lg-glass"></span><span class="lg-shine"></span>
+  <div class="lg-content">
+    <a class="mark" href="#top">Shivani Thakur</a>
+    <nav aria-label="Sections">
+      <a href="#profile">Profile</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#internships">Internships</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-top:64px">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Political Science Graduate</span>
+        <h1>Shivani <span>Thakur</span></h1>
+        <p class="lead">Political Science graduate with a strong interest in gender equality, social justice, and international development.</p>
+        <div class="cta">
+          <a class="btn coral" href="#experience">See experience</a>
+          <a class="btn ghost" href="#profile">Read profile</a>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="card lens">
+          <span class="lg-glass"></span><span class="lg-shine"></span>
+          <div class="lg-content">
+            <span class="badge">Team Lead · Content Writing</span>
+            <div>
+              <div class="big">8.61<small>CGPA</small></div>
+              <p><b>Bachelor of Arts</b> · 2022–2025</p>
+              <hr>
+              <p>Swami Ramanand Teerth University<br>Shivaji College</p>
+            </div>
+          </div>
+        </div>
+        <div class="loupe" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile">
+    <div class="wrap">
+      <h2>Profile</h2>
+      <div class="profile pane">
+        <p>Political Science graduate with a strong interest in gender equality, social justice, and international development. Through academic study and hands-on experience with non-profit organisations, I have developed a commitment to advancing inclusive policies and creating meaningful social impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap cols">
+      <div>
+        <h2>Education</h2>
+        <div class="pane bone pad hover">
+          <h3>Swami Ramanand Teerth University</h3>
+          <p class="sub">Bachelor of Arts (8.61 CGPA)</p>
+          <p class="sub">Shivaji College</p>
+          <div class="kv"><span class="pill">2022–2025</span><span class="pill teal">8.61 CGPA</span></div>
+        </div>
+      </div>
+      <div>
+        <h2>Language</h2>
+        <div class="lang">
+          <div class="pane bone hover"><b>English</b><span>Professional Proficiency</span></div>
+          <div class="pane bone hover"><b>Hindi</b><span>Native Proficiency</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li class="pane bone hover"><i>01</i>Research &amp; Analytical Thinking</li>
+        <li class="pane bone hover"><i>02</i>Report Writing &amp; Editing</li>
+        <li class="pane bone hover"><i>03</i>Critical Analysis</li>
+        <li class="pane bone hover"><i>04</i>Stakeholder Coordination</li>
+        <li class="pane bone hover"><i>05</i>Advocacy and Public Communication</li>
+        <li class="pane bone hover"><i>06</i>Qualitative Research</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="internships">
+    <div class="wrap">
+      <h2>Internships</h2>
+      <div class="two">
+        <article class="pane pad hover">
+          <h3>Bhumi NGO</h3>
+          <ul class="dots">
+            <li>Coordinated with partner schools and maintained programme records to support educational initiatives for underprivileged children.</li>
+            <li>Assisted in community outreach and administrative coordination to facilitate the smooth implementation of learning programmes.</li>
+          </ul>
+        </article>
+        <article class="pane pad hover">
+          <h3>Pehchaan The Street School</h3>
+          <ul class="dots">
+            <li>Created engaging and impactful content to support the NGO’s educational initiatives and digital outreach.</li>
+            <li>Contributed to raising awareness about education and social development through compelling written communication.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Professional Experience</h2>
+      <article class="pane bone role">
+        <h3>Team Lead – Content Writing</h3>
+        <p class="at">At Pehchaan The Street School</p>
+        <ul class="dots">
+          <li>Lead and coordinate a team of content writing interns</li>
+          <li>Oversee article writing, proofreading and editing</li>
+          <li>Mentor interns and give them constructive feedback</li>
+          <li>Ensure timely content delivery and maintain editorial quality</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <a class="pane bone hover ct" href="tel:+918390040745">
+          <small>Phone</small><b>+91 83900 40745</b><span>Call</span>
+        </a>
+        <a class="pane bone hover ct" href="mailto:shivthakur0407@gmail.com">
+          <small>Email</small><b>shivthakur0407@gmail.com</b><span>Send an email</span>
+        </a>
+        <a class="pane bone hover ct" href="https://www.linkedin.com/in/shivani-thakur-984823338" target="_blank" rel="noopener noreferrer">
+          <small>LinkedIn</small><b>linkedin.com/in/shivani-thakur-984823338</b><span>View profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Shivani Thakur</div>
+</footer>
+
+<script>
+document.getElementById("y").textContent=new Date().getFullYear();
+(function(){
+  var root=document.documentElement;
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var chromium=navigator.userAgentData&&navigator.userAgentData.brands.some(function(b){return b.brand==="Chromium"});
+  if(chromium)root.classList.add("refract");   /* SVG filters inside backdrop-filter only work in Chromium */
+  var defs=document.querySelector(".defs");
+  if(reduce&&defs.pauseAnimations)defs.pauseAnimations();
+
+  /* hovering the nav or loupe eases its refraction up, then back */
+  var maps=[].map.call(document.querySelectorAll("feDisplacementMap"),function(m){return{m:m,base:+m.dataset.s}});
+  var k=1,t=1,raf=0;
+  function step(){
+    k+=(t-k)*.12;
+    maps.forEach(function(o){o.m.setAttribute("scale",(o.base*k).toFixed(1))});
+    raf=Math.abs(t-k)>.004?requestAnimationFrame(step):0;
+  }
+  function target(v){t=v;if(!raf)raf=requestAnimationFrame(step)}
+  document.querySelectorAll(".bar,.loupe").forEach(function(el){
+    el.addEventListener("pointerenter",function(){target(1.5)});
+    el.addEventListener("pointerleave",function(){target(1)});
+  });
+
+  /* specular sheen follows the pointer across every glass surface */
+  document.querySelectorAll(".lens,.pane").forEach(function(el){
+    el.addEventListener("pointermove",function(e){
+      var r=el.getBoundingClientRect();
+      el.style.setProperty("--mx",(e.clientX-r.left)+"px");
+      el.style.setProperty("--my",(e.clientY-r.top)+"px");
+    });
+  });
+
+  /* the loupe drifts over the card on its own until someone grabs it */
+  var stage=document.querySelector(".stage"),loupe=stage.querySelector(".loupe");
+  var x=0,y=0,auto=!reduce,drag=false,ox=0,oy=0,visible=true;
+  function room(){return{w:Math.max(0,stage.clientWidth-loupe.offsetWidth),h:Math.max(0,stage.clientHeight-loupe.offsetHeight)}}
+  function place(nx,ny){var b=room();x=Math.min(b.w,Math.max(0,nx));y=Math.min(b.h,Math.max(0,ny));loupe.style.translate=x+"px "+y+"px"}
+  function drift(now){
+    if(!auto)return;
+    if(visible){var b=room();place(b.w*(.5+.46*Math.sin(now*.00031)),b.h*(.5+.44*Math.sin(now*.00047+1.3)))}
+    requestAnimationFrame(drift);
+  }
+  var b0=room();place(b0.w*.3,b0.h*.35);
+  if(auto){
+    requestAnimationFrame(drift);
+    if("IntersectionObserver" in window)new IntersectionObserver(function(en){visible=en[0].isIntersecting}).observe(stage);
+  }
+  loupe.addEventListener("pointerdown",function(e){auto=false;drag=true;ox=e.clientX-x;oy=e.clientY-y;loupe.setPointerCapture(e.pointerId)});
+  loupe.addEventListener("pointermove",function(e){if(drag)place(e.clientX-ox,e.clientY-oy)});
+  loupe.addEventListener("pointerup",function(){drag=false});
+  loupe.addEventListener("pointercancel",function(){drag=false});
+  addEventListener("resize",function(){place(x,y)});
+})();
+</script>
+</body>
+</html>
